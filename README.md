@@ -48,3 +48,8 @@ Matrix: Count of Attacks by Attack Type.
 Area Chart: Total Attacks by Year.
 
 Line Chart: Success and Failure Rate by Group.
+
+### Measures created and used:
+
+ - Succeeded
+ - Failed
