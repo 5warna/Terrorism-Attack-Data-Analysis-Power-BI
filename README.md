@@ -49,7 +49,10 @@ Area Chart: Total Attacks by Year.
 
 Line Chart: Success and Failure Rate by Group.
 
-### Measures created and used:
+### Data Analysis Expressions (DAX) Formulas used in Measures:
 
- - Succeeded
- - Failed
+Succeeded = CALCULATE ( COUNTROWS ('Terrorism Attack Final Dataset'),                                         
+'Terrorism Attack Final Dataset'[Success Rate] = 1 )  
+
+ Failed = CALCULATE ( COUNTROWS ('Terrorism Attack Final Dataset'),                                         
+ 'Terrorism Attack Final Dataset'[Success Rate] = 0 ) 
